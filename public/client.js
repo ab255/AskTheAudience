@@ -21,10 +21,10 @@ for (let i = 0; i < buttons.length; i++) {
   });
 }
 
-// socket.on('initialState', (votes) => {
-//   console.log(votes);
-//   votesMessage.innerText = 'A: ' + votes[0] + '  B: ' + votes[1] + '  C: ' + votes[2] + '  D: ' + votes[3]
-// });
+socket.on('initialState', (votes) => {
+  console.log(votes);
+  votesMessage.innerText = 'A: ' + votes.A + '  B: ' + votes.B + '  C: ' + votes.C + '  D: ' + votes.D
+});
 
 socket.on('voteCount', (votes) => {
   votesMessage.innerText = 'A: ' + votes.A + '  B: ' + votes.B + '  C: ' + votes.C + '  D: ' + votes.D
