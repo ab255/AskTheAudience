@@ -26,7 +26,7 @@ io.on('connection', (socket) => {
 
   socket.emit('statusMessage', 'You have connected.');
 
-  socket.emit('message', votes[socket.id]);
+  // socket.emit('message', votes[socket.id]);
 
   socket.on('disconnect', () => {
     console.log('A user has disconnected.', io.engine.clientsCount);
