@@ -22,3 +22,30 @@ header {
   margin-right: 20px;
   font-size: 1.2em
 }
+
+#status-message {
+  margin: 10px 0 0 10px;
+}
+
+h2 {
+  font-size: 1.5em;
+  font-weight: bold;
+  margin: 10px 0 10px 10px;
+}
+
+#choices {
+  margin-left: 10px;
+}
+
+#choices button {
+  margin-right: 10px;
+  font-size: .7em;
+}
+
+#current-vote {
+  margin: 10px 0 10px 10px;
+}
+
+#total-votes {
+  margin: 10px 0 10px 10px;
+}
